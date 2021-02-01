@@ -1,0 +1,86 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">General Trivia</h1>
+    </div>
+    <div class="result hide">
+      <h4>Your can be <span id="score">0</span>% Frontend developer</h4>
+    </div>
+    <form class="quizsection">
+      <h3>On with Questions.....</h3>
+      <div class="q1">
+        <p class="question">
+          1. Do you like coding?
+        </p>
+        <div>
+          <input type="radio" value="Yes" id="q1o1" name="q1" />
+          <label for="q1o1">Yes</label>
+        </div>
+        <div>
+          <input type="radio" value="No" id="q1o2" name="q1" />
+          <label for="q1o2">No</label>
+        </div>
+      </div>
+      <div class="q1">
+        <p class="question">
+          2. Do you like CSS?
+        </p>
+        <div>
+          <input type="radio" value="Yes" id="q1o1" name="q2" />
+          <label for="q1o1">Yes</label>
+        </div>
+        <div>
+          <input type="radio" value="No" id="q1o2" name="q2" />
+          <label for="q1o2">No</label>
+        </div>
+      </div>
+      <div class="q1">
+        <p class="question">
+          3. Do you like Javascript?
+        </p>
+        <div>
+          <input type="radio" value="Yes" id="q1o1" name="q3" />
+          <label for="q1o1">Yes</label>
+        </div>
+        <div>
+          <input type="radio" value="No" id="q1o2" name="q3" />
+          <label for="q1o2">No</label>
+        </div>
+      </div>
+      <div class="q1">
+        <p class="question">
+          4. Do you like HTML?
+        </p>
+        <div>
+          <input
+            type="radio"
+            value="Yes"
+            id="q1o1"
+            name="q4"
+            onClick="checkvaluesubmission()"
+          />
+          <label for="q1o1">Yes</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            value="No"
+            id="q1o2"
+            name="q4"
+            onClick="checkvaluesubmission()"
+          />
+          <label for="q1o2">No</label>
+        </div>
+      </div>
+      <input type="submit" value="Submit" id="submit" disabled />
+    </form>
+    <script src="quiz.js"></script>
+  </body>
+</html>
